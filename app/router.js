@@ -1,0 +1,2 @@
+Charcoaltest.Router.map(function() {
+});
