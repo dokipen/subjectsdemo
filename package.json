@@ -1,11 +1,13 @@
 {
-  "name": "charcoaltest",
-  "version": "0.1.0",
-  "dependencies": {
-    "grunt-connect-proxy": "~0.1.5"
-  },
+  "name": "subjectdemo",
+  "version": "0.0.0",
+  "description": "Collect datasift data, enhance with embedly and push it via pusher",
+  "repository": "https://github.com/dokipen/subjectsdemo",
+  "author": "Bob Corsaro",
+  "license": "BSD",
   "devDependencies": {
     "grunt": "~0.4.1",
+    "grunt-connect-proxy": "~0.1.5",
     "grunt-contrib-copy": "~0.4.1",
     "grunt-contrib-concat": "~0.1.3",
     "grunt-contrib-coffee": "~0.6.5",

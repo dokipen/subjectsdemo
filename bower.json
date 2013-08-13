@@ -1,8 +1,8 @@
 {
-  "name": "charcoaltest",
+  "name": "subjectdemo",
   "version": "0.1.0",
   "dependencies": {
-    "jquery": "~2.0.0",
+    "jquery": "~1.9.0",
     "handlebars": "1.0.0",
     "ember": "~1.0.0",
     "ember-data": "http://builds.emberjs.com.s3.amazonaws.com/ember-data-0.13.js",

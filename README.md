@@ -24,4 +24,5 @@ This is a demo app with no effort made for security. Bad things will happen if y
   * `$ npm install`
   * `$ cp settings.js.example settings.js`
   * `$ edit settings.js # fill in your account details from previous steps`
-  * `$ grunt server`
+  * `$ cd ..`
+  * `$ DEBUG=* grunt server`
