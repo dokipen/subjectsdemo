@@ -1,0 +1,22 @@
+var DATASIFT_KEY = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+    DATASIFT_USERNAME = 'xxxxxxxxxxxx',
+    INQUEUE = 'STREAM',
+    OUTQUEUE = 'ARCHIVE',
+    EMBEDLY_KEY = 'xxxxxxxxxxxx',
+    PUSHER_APP_ID = 'xxxxxx',
+    PUSHER_KEY = 'xxxxxxxxxxxxxxxxxx',
+    PUSHER_SECRET = 'xxxxxxxxxxxxxxxxxxxxx',
+    CSDL_TEMPLATE = 'twitter.links exists AND twitter.text contains_any "<%= subject %>" AND twitter.user.lang in "en"';
+
+
+exports = module.exports = {
+  datasiftKey: DATASIFT_KEY,
+  datasiftUsername: DATASIFT_USERNAME,
+  inqueueKey: INQUEUE,
+  outqueueKey: OUTQUEUE,
+  embedlyKey: EMBEDLY_KEY,
+  pusherAppId: PUSHER_APP_ID,
+  pusherKey: PUSHER_KEY,
+  pusherSecret: PUSHER_SECRET,
+  csdlTemplate: CSDL_TEMPLATE
+}

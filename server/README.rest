@@ -1,0 +1,27 @@
+subjects-backend
+================
+
+A prototype of embedly/datasift/pusher integration
+
+Quickstart
+----------
+
+ * install redis
+ * start redis
+ * copy settings.js.example to settings.js and edit
+ * `DEBUG=* node web.js`
+
+DB
+--
+
+Redis is used for a work queue of incoming datasift events (key = STREAM), and
+archive processed work (key = ARCHIVE). It is also used as a pubsub for adding
+and deleting subjects. The app looks for redis at localhost:6379 and uses db=0.
+
+WARNING
+=======
+
+There is no security anywhere in this app and once we start listening on a
+subject, there is no auto-shutoff. Users can accidentally, or purposefully
+use up all your datashift credits very quickly. This is meant for demo
+purposes only.
