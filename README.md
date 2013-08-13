@@ -13,13 +13,13 @@ This is a demo app with no effort made for security. Bad things will happen if y
 
 ## Quickstart
 
-  * Install redis
-  * Start redis on localhost:6379
-  * npm install
-  * bower install
   * Sign up for an Embedly account. (https://app.embed.ly/signup)
   * Sign up for a DataSift account. (http://datasift.com/platform/get-started)
   * Sign up for a Pusher account. (http://pusher.com/pricing)
+  * Install redis
+  * Start redis on localhost:6379
+  * `$ npm install`
+  * `$ bower install`
   * `$ cd server`
   * `$ npm install`
   * `$ cp settings.js.example settings.js`
