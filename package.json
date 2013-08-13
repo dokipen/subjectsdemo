@@ -1,7 +1,9 @@
 {
   "name": "charcoaltest",
   "version": "0.1.0",
-  "dependencies": {},
+  "dependencies": {
+    "grunt-connect-proxy": "~0.1.5"
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-copy": "~0.4.1",
@@ -25,7 +27,7 @@
     "matchdep": "~0.1.1",
     "grunt-ember-templates": "~0.4.4",
     "grunt-neuter": "git://github.com/thomasboyt/grunt-neuter.git#glob-support",
-    "grunt-contrib-less": "~0.6.4"
+    "grunt-contrib-less": "~0.7.0"
   },
   "engines": {
     "node": ">=0.8.0"

@@ -41,6 +41,10 @@ module.exports = function (grunt) {
 
   grunt.renameTask('regarde', 'watch');
 
+  grunt.registerTask('backend-server', function() {
+    require('./server/web');
+  });
+
   grunt.registerTask('server', function (target) {
     if (target === 'dist') {
       return grunt.task.run(['build', 'open', 'connect:dist:keepalive']);
@@ -48,6 +52,7 @@ module.exports = function (grunt) {
 
     grunt.task.run([
       'clean:server',
+      'backend-server',
       'concurrent:server',
       'livereload-start',
       'connect:livereload',

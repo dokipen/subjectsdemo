@@ -1,2 +1,3 @@
-Charcoaltest.Router.map(function() {
+Subjects.Router.map(function() {
+  this.route('stream', {path: '/stream/:subject'});
 });

@@ -1,8 +1,9 @@
-window.Charcoaltest = Ember.Application.create({
+window.Subjects = Ember.Application.create({
+  backend: {
+    host: 'http://localhost:3000'
+  },
   pusher: {
-    key: 'e334917343aa751761c8',
-    channel: 'twitter_channel',
-    'event': 'tweet'
+    key: 'e334917343aa751761c8'
   }
 });
 

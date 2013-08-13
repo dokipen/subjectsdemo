@@ -5,7 +5,7 @@ var step = require('step'),
     settings = require('./settings'),
     started = false,
     inspect = require('util').inspect,
-    debug = require('debug')('subject-server'),
+    debug = require('debug')('subject-server:worker'),
     pusher = utils.pusher,
     jpath = require('JSONPath').eval;
 
@@ -67,7 +67,7 @@ function procNext(redis, embedlyApi) {
           try {
             if (extract.url && extract.type != 'error') {
               procCount += 1;
-              debug('got extract');
+              debug('got extract for %s', ev.hash);
 
               pusher.trigger(ev.hash, 'tweet', {
                 'event': ev,
@@ -83,6 +83,7 @@ function procNext(redis, embedlyApi) {
         debug('no extracts processed');
         return setTimeout(utils.partial(redis, embedlyApi, procNext));
       }
+      this();
     },
     // next iteration
     function(err) {
@@ -95,7 +96,9 @@ function procNext(redis, embedlyApi) {
 
 
 function start() {
+  debug("started:", started);
   if (started) { return }
+  debug("starting");
 
   procNext.stop = false;
   step(

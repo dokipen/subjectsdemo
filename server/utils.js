@@ -1,7 +1,7 @@
 var crypto = require('crypto'),
     settings = require('./settings'),
     Pusher = require('pusher'),
-    debug = require('debug')('subject-server');
+    debug = require('debug')('subject-server:utils');
 
 /**
  * A utility function to find all URLs - FTP, HTTP(S) and Email - in a text string

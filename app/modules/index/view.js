@@ -1,2 +1,2 @@
-Charcoaltest.IndexView = Ember.View.extend({
+Subjects.IndexView = Ember.View.extend({
 });

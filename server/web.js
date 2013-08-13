@@ -3,7 +3,7 @@ var Endpoint = require('express-endpoint'),
     express = require('express'),
     forceJson = require('./forceJson'),
     Subject = require('./subject'),
-    debug = require('debug')('subject-server'),
+    debug = require('debug')('subject-server:web'),
     worker = require('./worker'),
     collector = require('./collector');
 

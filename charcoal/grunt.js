@@ -5,6 +5,7 @@
  * */
 
 var lrSnippet = require('grunt-contrib-livereload/lib/utils').livereloadSnippet;
+var proxySnippet = require('grunt-connect-proxy/lib/utils').proxyRequest;
 var mountFolder = function (connect, dir) {
   return connect.static(require('path').resolve(dir));
 };
@@ -80,12 +81,22 @@ module.exports = {
         options: {
           middleware: function (connect) {
             return [
+              proxySnippet,
               lrSnippet,
               mountFolder(connect, 'tmp')
             ];
           }
         }
       },
+      proxies: [
+        {
+          conext: '/1/subject',
+          host: 'localhost',
+          port: 3000,
+          https: false,
+          changeOrigin: false
+        }
+      ],
       test: {
         options: {
           middleware: function (connect) {

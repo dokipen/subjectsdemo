@@ -7,7 +7,7 @@ var DataSift = require('datasift'),
     Subject = require('./subject'),
     subject = new Subject(),
     _ = require('underscore'),
-    debug = require('debug')('subject-server');
+    debug = require('debug')('subject-server:collector');
 
 step(
   function() {
@@ -37,7 +37,7 @@ step(
       connected = true;
     });
     consumer.on('interaction', function(data) {
-      debug('interaction');
+      debug('interaction', data.hash);
       redis.lpush(settings.inqueueKey, JSON.stringify(data));
     });
     consumer.on('disconnect', function() {
