@@ -18,11 +18,16 @@ This is a demo app with no effort made for security. Bad things will happen if y
   * Sign up for a Pusher account. (http://pusher.com/pricing)
   * Install redis
   * Start redis on localhost:6379
-  * `$ npm install`
-  * `$ bower install`
-  * `$ cd server`
-  * `$ npm install`
-  * `$ cp settings.js.example settings.js`
-  * `$ edit settings.js # fill in your account details from previous steps`
-  * `$ cd ..`
-  * `$ DEBUG=* grunt server`
+  * Run the following commands::
+
+    # You may need sudo for the first 2 commands, depending on your setup.
+    npm install -g bower`
+    npm install -g grunt`
+    npm install`
+    bower install`
+    cd server`
+    npm install`
+    cp settings.js.example settings.js`
+    edit settings.js # fill in your account details from previous steps`
+    cd ..`
+    DEBUG=* grunt server`
