@@ -18,7 +18,9 @@ This is a demo app with no effort made for security. Bad things will happen if y
   * Sign up for a Pusher account. (http://pusher.com/pricing)
   * Install redis
   * Start redis on localhost:6379
-  * Run the following commands::
+  * Run the following commands
+
+commands:
 
     # You may need sudo for the first 2 commands, depending on your setup.
     npm install -g bower`
